@@ -7,11 +7,12 @@ window.addEventListener('load', function() {
         element.classList.add('focus');
     }, 4000);
 
-    btnClosd.addEventListener('click', function() {
+    function closed() {
         element.classList.remove('focus');
-    });
+    }
 
-    btnYes.addEventListener('click', function() {
-        element.classList.remove('focus');
-    });
+    btnClosd.addEventListener('click', closed);
+
+    btnYes.addEventListener('click', closed);
+    
 });
