@@ -11,8 +11,7 @@ window.addEventListener('load', function() {
         element.classList.remove('focus');
     }
 
-    btnClosd.addEventListener('click', closed);
-
-    btnYes.addEventListener('click', closed);
-    
+    [btnClosd, btnYes].forEach(btn =>{
+        btn.addEventListener('click', closed);
+    }
 });
